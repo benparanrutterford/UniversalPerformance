@@ -6,7 +6,7 @@ let win;
 
 function createWindow(){
     // Create browser window
-    win = new BrowserWindow({width:800, height:800, icon:__dirname+'/img/logo temp.png'});
+    win = new BrowserWindow({width:800, height:800, icon:__dirname+'/img/logo temp.png', webPreferences: { nodeIntegration: true }});
     
     // Load index.html
     win.loadURL(url.format({
@@ -14,6 +14,8 @@ function createWindow(){
         protocol: 'file:',
         slashes: true
     }));
+
+
 
     // Open devtools
     win.webContents.openDevTools();
