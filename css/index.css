@@ -1,30 +1,49 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: darkgray;
 }
 
 .body {
     margin: 0;
+    background-color: slategray;
 }
 
 #Title {
-text-align: center
-}
-
-.navbar {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    
-}
-
-.container-fluid {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar-nav { 
-    flex-direction: row;
     text-align: center;
+    border-bottom: 2px solid black;
+
+}
+
+/* Tabs */
+
+.tab {
+    overflow: hidden;
+    border: 1px solid slategray;
+    background-color: slategray;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.5s;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
 }
